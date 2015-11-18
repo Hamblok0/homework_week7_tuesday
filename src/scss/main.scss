@@ -1,0 +1,278 @@
+@import '../../dist/bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../../dist/bower_components/neat/app/assets/stylesheets/neat';
+
+
+header {
+
+  background-color: #F5F5F5;
+  border-bottom: 1px solid #E5E5E5;
+  padding: 10px 0 10px 0;
+}
+
+.headWrapper {
+  @include outer-container(985px);
+
+}
+.homeLink .octicon-mark-github {
+  width: 28px;
+  height: 28px;
+  font-size: 28px;
+  color: black;
+}
+.nav1 {
+  display: inline-block;
+  position: relative;
+  bottom: 3px;
+
+  a {
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+.nav2 {
+  float: right;
+  position: relative;
+  top: 5px;
+  .bell  .octicon-bell {
+      width: 32px;
+      font-size: 16px;
+      text-align: center;
+    }
+  .bell {
+      position: relative;
+      bottom: 5px;
+      color: black;
+    }
+  .plus  {
+    position: relative;
+    bottom: 5px;
+    width: 41px;
+    margin-right: 10px;
+    }
+  .plus .octicon-plus {
+    width: 16px;
+    font-size: 16px;
+    color: black;
+  }
+  .plus .octicon-triangle-down {
+    width: 6px;
+    font-size: 10px;
+    color: black;
+  }
+
+  .profileNav .octicon-triangle-down {
+    width: 6px;
+    font-size: 10px;
+    position: relative;
+    bottom: 5px;
+    color: black;
+    margin-left: 5px;
+  }
+}
+.searchBar {
+  margin-left: 11px;
+  padding: 10px;
+  width: 360px;
+  height: 30px;
+  position: relative;
+  bottom: 3px;
+  border-radius: 3px;
+  border: 1px solid #CCCCCC;
+  font-size: 12px;
+
+
+}
+.av2 {
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+}
+
+
+main {
+  @include outer-container(985px);
+  margin-top: 20px;
+}
+
+// main body
+
+.main {
+  @include span-columns(9 of 12);
+  @include omega;
+}
+
+.repoTab {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+  border-radius: 3px 3px 0 0;
+  border: 1px solid #ddd;
+  border-bottom: 0;
+  position: relative;
+  bottom: -1px;
+}
+
+.repoSearch {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+  .new {
+    color: white;
+    background-color: #88DB6B;
+    border: 1px solid #5CA941;
+    border-radius: 3px;
+    padding: 10px 12px 10px 12px;
+    .octicon, .octicon-repo {
+      margin-right: 5px;
+    }
+  }
+  .searchBar2 {
+    height: 35px;
+    width: 260px;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    border: 1px solid #CCCCCC;
+  }
+  .searchButton {
+    height: 33px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    font-size: 13px;
+  }
+  .searchNarrow {
+    float: right;
+    font-size: 14px;
+    position: relative;
+    top: 10px;
+    a {
+      text-decoration: none;
+      margin-right: 11px;
+    }
+  }
+}
+
+.repo {
+  border-bottom: 1px solid #DDDDDD;
+  margin-top: 35px;
+  padding-bottom: 20px;
+  .repoStats {
+    float: right;
+  }
+  .repoLink {
+    text-decoration: none;
+    color: #4078C0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .repoStats {
+    color: #888888;
+    font-size: 12px;
+
+    .star {
+      margin-right: 10px;
+    .octicon, .ocicon-star {
+        margin-right: 5px;
+      }
+    }
+    .octicon, .octicon-git-branch {
+      margin-right: 5px;
+    }
+    .language {
+      margin-right: 10px;
+    }
+  }
+  .updateText {
+    color: #888888;
+    font-size: 12px;
+ }
+
+}
+
+// side panel
+.profileInfo {
+  @include span-columns(3 of 12);
+}
+
+.avatar {
+  height: 230px;
+  width: 230px;
+  border-radius: 6px;
+}
+
+
+
+.userName {
+  display: inline-block;
+  margin-bottom: 23px;
+  font-size: 1.3em;
+  font-weight: lighter;
+  color: #666666;
+}
+
+.joinDate {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+  .octicon, .octicon-clock {
+    color: #999999;
+    font-size: 16px;
+  }
+  .date {
+    margin-left: 10px;
+    color: black;
+    font-size: 14px;
+  }
+}
+
+.date {
+  font-size: .7em;
+}
+
+.popCount {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  a {
+    text-decoration: none;
+  }
+  .followers, .starred, .following {
+    float: left;
+    width: 33.333%;
+  }
+  strong {
+    font-size: 30px;
+    margin-left: 20px;
+    color: #4078C0;
+  }
+  span {
+    font-size: 11px;
+    color: gray;
+    position: relative;
+    bottom: 10px;
+  }
+  .spanFol {
+    left: 5px;
+  }
+  .spanStar {
+    left: 10px;
+  }
+  .spanFoling {
+    left: 5px;
+ }
+}
+
+.orgBox {
+  margin-top: 40px;
+  border-top: 1px solid #DDDDDD;
+}
